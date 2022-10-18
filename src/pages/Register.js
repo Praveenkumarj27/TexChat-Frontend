@@ -33,11 +33,11 @@ export default function Register() {
     draggable: true,
     theme: "light",
   };
-  // useEffect(() => {
-  //   if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
-  //     navigate("/");
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
+      navigate("/");
+    }
+  }, []);
   const handleChange = (event) => {
     setValues({ ...values, [event.target.name]: event.target.value });
   };
