@@ -33,7 +33,7 @@ export default function Register() {
     draggable: true,
     theme: "light",
   };
-  useEffect(() => {
+  React.useEffect(() => {
     if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
       navigate("/");
     }
