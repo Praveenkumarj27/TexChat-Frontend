@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo.png";
 import Logout from "../Logout/Logout";
 import { Container } from "./ContactsElements";
 
@@ -25,7 +25,7 @@ export default function Contacts({ contacts, changeChat }) {
         <Container>
           <div className="brand">
             <img src={Logo} alt="logo" />
-            <h3>TexChat</h3>
+            <h2>TexChat</h2>
           </div>
           <div className="contacts">
             {contacts.map((contact, index) => {
@@ -69,5 +69,3 @@ export default function Contacts({ contacts, changeChat }) {
     </>
   );
 }
-
- 

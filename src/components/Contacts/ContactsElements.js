@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-rows: 15% 75% 10%;
   overflow: hidden;
-  background-color: #f7eeff;
+  background-color: #f3f3ec;
 
   .brand {
     background-color: #311566;
@@ -13,13 +13,15 @@ export const Container = styled.div`
     gap: 1rem;
     justify-content: center;
     img {
-      height: 2rem;
+      height: 6rem;
     }
-    h3 {
+    h2 {
       color: white;
+      margin-right: 50px;
     }
   }
   .contacts {
+    color: black;
     padding-top: 10px;
     overflow: auto;
     gap: 0.8rem;
@@ -48,7 +50,7 @@ export const Container = styled.div`
       }
       .username {
         h3 {
-          color: white;
+          color: black;
         }
       }
     }

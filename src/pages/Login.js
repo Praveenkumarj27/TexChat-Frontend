@@ -16,6 +16,8 @@ import { loginRoute } from "../utils/APIRoutes";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import { IconButton, InputAdornment,  } from "@mui/material";
+import logo from "../assets/logo.png";
+
 
 const theme = createTheme();
 
@@ -102,7 +104,7 @@ export default function Login() {
               style={{
                 height: "8rem",
               }}
-              src="https://images-platform.99static.com//G5HtFI0l8GoTzH_cE1QPU_mGQp8=/539x4026:1069x4556/fit-in/500x500/projects-files/46/4632/463209/290ac31b-f41b-4355-bbc4-5f4a3026d5de.png"
+              src={logo}
               alt="logo"
             />
             <h1>TexChat</h1>
@@ -161,7 +163,7 @@ export default function Login() {
                 textDecoration: "none",
                 fontWeight: "bold",
               }}
-              href="#"
+              href="/password"
               variant="body2"
             >
               Forgot password?
