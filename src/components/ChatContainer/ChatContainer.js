@@ -1,12 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-
 import { v4 as uuidv4 } from "uuid";
 import axios from "axios";
 import { Container } from "./ChatcontainerElements";
 import { recieveMessageRoute, sendMessageRoute } from "../../utils/APIRoutes";
 import ChatInput from "../ChatInput/ChatInput";
-import Password from "../../pages/Password";
-import { Link } from "react-router-dom";
 
 export default function ChatContainer({ currentChat, socket }) {
   const [messages, setMessages] = useState([]);
@@ -85,7 +82,6 @@ export default function ChatContainer({ currentChat, socket }) {
             <h3>{currentChat.username}</h3>
           </div>
         </div>
-        <Link to={"/password"}>Password</Link>
       </div>
       <div className="chat-messages">
         {messages.map((message) => {

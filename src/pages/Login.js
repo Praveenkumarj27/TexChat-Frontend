@@ -157,7 +157,7 @@ export default function Login() {
                 ),
               }}
             />
-            <Link
+            {/* <Link
               style={{
                 color: "#4e0eff",
                 textDecoration: "none",
@@ -167,7 +167,7 @@ export default function Login() {
               variant="body2"
             >
               Forgot password?
-            </Link>
+            </Link> */}
             <Button
               type="submit"
               fullWidth

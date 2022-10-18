@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SetAvatar from "./components/Avatar/SetAvatar";
 import Chat from "./pages/Chat";
 import Login from "./pages/Login";
-import Password from "./pages/Password";
 import Register from "./pages/Register";
 
 export default function App() {
@@ -14,7 +13,6 @@ export default function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/setAvatar" element={<SetAvatar />} />
         <Route path="/" element={<Chat />} />
-        <Route path="/password" element={<Password />} />
       </Routes>
     </BrowserRouter>
   );
