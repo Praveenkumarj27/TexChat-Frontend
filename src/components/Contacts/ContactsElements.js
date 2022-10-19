@@ -5,7 +5,10 @@ export const Container = styled.div`
   grid-template-rows: 15% 75% 10%;
   overflow: hidden;
   background-color: #f3f3ec;
-
+  font-family: "DM Sans";
+  font-style: "normal";
+  font-weight: "500";
+  font-size: "16px";
   .brand {
     background-color: #311566;
     display: flex;

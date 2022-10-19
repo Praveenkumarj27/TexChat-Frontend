@@ -14,7 +14,10 @@ width: 100vw;
 .loader {
   max-inline-size: 100%;
 }
-
+.loading{
+  color:white;
+  font-size: large;
+}
 .title-container {
   h1 {
     color: white;

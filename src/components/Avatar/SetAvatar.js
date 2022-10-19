@@ -70,8 +70,7 @@ export default function SetAvatar() {
     <>
       {isLoading ? (
         <Container>
-          {/* <img src={loader} alt="loader" className="loader" /> */}
-          <h1>Loading...</h1>
+          <h1 className="loading">Loading...</h1>
         </Container>
       ) : (
         <Container>
