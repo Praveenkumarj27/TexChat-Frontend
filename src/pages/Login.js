@@ -24,7 +24,7 @@ const theme = createTheme();
 export default function Login() {
   let navigate = useNavigate();
   const [showPwd, setShowPwd] = React.useState(true);
-  const [values, setValues] = React.useState({ username: "", password: "" });
+  const [values, setValues] = React.useState({ email: "", password: "" });
   const toastOptions = {
     position: "top-right",
     autoClose: 8000,
@@ -43,8 +43,8 @@ export default function Login() {
   };
 
   const validateForm = () => {
-    const { username, password } = values;
-    if (username === "") {
+    const { email, password } = values;
+    if (email === "") {
       toast.error("Email and Password is required.", toastOptions);
       return false;
     } else if (password === "") {
@@ -59,9 +59,9 @@ export default function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (validateForm()) {
-      const { username, password } = values;
+      const { email, password } = values;
       const { data } = await axios.post(loginRoute, {
-        username,
+        email,
         password,
       });
       if (data.status === false) {
@@ -126,10 +126,10 @@ export default function Login() {
               required
               fullWidth
               onChange={(e) => handleChange(e)}
-              id="username"
-              label="UserName"
-              name="username"
-              autoComplete="username"
+              id="email"
+              label="Email"
+              name="email"
+              autoComplete="email"
               autoFocus
             />
 
